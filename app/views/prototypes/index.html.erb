@@ -7,14 +7,13 @@
         <%#= link_to "ユーザー名さん", root_path, class: :greeting__link%>
       </div> 
     <%# // ログインしているときは上記を表示する %>
-    <% else %>
     
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     
     <% end %>
       
     <div class="card__wrapper">
-    <%= render 'prototype', collection: @prototypes %>
+    <%= render partial: 'prototype', collection: @prototypes %>
     </div>
   </div>
 </main>

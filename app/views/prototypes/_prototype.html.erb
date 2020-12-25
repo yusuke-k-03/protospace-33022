@@ -1,5 +1,6 @@
 <div class="card">
-  <%= link_to image_tag(prototype.image, class: :card__img), prototype_path(@prototype.id) %>
+  <%= link_to root_path %>
+     <%= image_tag prototype.image, class: :card__img %>
   <div class="card__body">
     <%= link_to prototype.title, root_path, class: :card__title %>
     <p class="card__summary">
